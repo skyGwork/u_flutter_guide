@@ -18,8 +18,6 @@ class MyApp extends StatelessWidget {
             secondary: Colors.amber,
           ),
           appBarTheme: const AppBarTheme(
-            // color: Colors.red,
-            // backgroundColor:Colors.red,
             // color:ColorManager.primary,
             elevation: 10,
             centerTitle: true,
