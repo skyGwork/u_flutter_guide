@@ -9,8 +9,6 @@ class CategoryMealsScreen extends StatelessWidget {
     required this.categoryTitle,
   }) : super(key: key);
 
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
