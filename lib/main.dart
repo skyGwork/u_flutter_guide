@@ -13,7 +13,10 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'DeliMeals',
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          colorScheme:
+              ColorScheme.fromSwatch(primarySwatch: Colors.pink).copyWith(
+            secondary: Colors.amber,
+          ),
           appBarTheme: const AppBarTheme(
             // color: Colors.red,
             // backgroundColor:Colors.red,
@@ -24,6 +27,24 @@ class MyApp extends StatelessWidget {
               color: Colors.white,
             ),
           ),
+          canvasColor: const Color.fromRGBO(255, 254, 229, 1),
+          fontFamily: 'Raleway',
+          textTheme: ThemeData.light().textTheme.copyWith(
+                //body1
+                overline: const TextStyle(
+                  color: Color.fromRGBO(20, 51, 51, 1),
+                ),
+                //body2
+                caption: const TextStyle(
+                  color: Color.fromRGBO(20, 51, 51, 1),
+                ),
+                // title
+                bodyText1: const TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'RobotoCondensed',
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
         ),
         home: const CategoriesScreen());
   }
