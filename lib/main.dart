@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'categories_screen.dart';
+import 'router/router.dart';
 
 void main() => runApp(const MyApp());
 
@@ -44,6 +45,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
         ),
+              onGenerateRoute: (settings) => generateRoute(settings),
         home: const CategoriesScreen());
   }
 }
