@@ -8,8 +8,6 @@ class CategoryItem extends StatelessWidget {
     required this.title,
     required this.color,
   }) : super(key: key);
-
- 
   @override
   Widget build(BuildContext context) {
     return Container(
